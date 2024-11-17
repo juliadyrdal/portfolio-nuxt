@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'RundDisplay';
+    src: url('~/assets/fonts/RundDisplay-Regular.woff2') format('woff2'),
+         url('~/assets/fonts/RundDisplay-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'RundDisplay';
+    src: url('~/assets/fonts/RundDisplay-Black.woff2') format('woff2'),
+         url('~/assets/fonts/RundDisplay-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
