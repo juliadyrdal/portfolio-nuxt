@@ -58,7 +58,7 @@ onMounted(() => {
                                     <span
                                         :class="{ 'font-bold': selectedCategory === 'webDev' }"
                                     >Web development</span> 
-                                    <IconNumber4 class="hidden md:block text-5xl -mt-2" />
+                                    <IconNumber2 class="hidden md:block text-5xl -mt-2" />
                                 </button>
                                 <IconUnderlineXsmall v-if="selectedCategory === 'webDev'" class="hidden md:block md:w-[5rem] -ml-5 -mt-2" :fontControlled="false" />
                             </div>

@@ -2,6 +2,8 @@
 // Import Heroicons
 import { ComputerDesktopIcon, MusicalNoteIcon, BookmarkIcon, TicketIcon, DevicePhoneMobileIcon } from '@heroicons/vue/24/outline'
 import IconGithub from '~/assets/github-mi.svg'
+import IconFigma from '~/assets/figma.svg'
+
 // Declare props
 const props = defineProps({
     project: { type: Object, required: true },
@@ -46,6 +48,10 @@ const heroIcon = icons[props.project.icon]
                     <li v-if="project.url" class="flex gap-4 items-center">
                         <ComputerDesktopIcon class="size-6" />
                         <a :href="project.url" target="_blank" class="text-lg hover:underline underline-offset-4">View website</a>
+                    </li>
+                    <li v-if="project.figma" class="flex gap-4 items-center">
+                        <IconFigma class="h-[2rem] text-white" :fontControlled="false" />
+                        <a :href="project.figma" target="_blank" class="text-lg hover:underline underline-offset-4">View project in Figma</a>
                     </li>
                 </ul>
             </div>

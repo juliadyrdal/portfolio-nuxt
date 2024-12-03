@@ -3,8 +3,8 @@ title: "SoundCanvas"
 date: "2023-06-01"
 slug: "projects/soundcanvas"
 type: "Web development"
-github: "https://github.com/juliadyrdal/youwish-frontend"
-url: "https://youwish-frontend.onrender.com"
+github: "https://github.com/juliadyrdal/soundcanvas"
+url: "https://soundcanvas-kw93.onrender.com"
 order: 2
 icon: "music-note"
 tech: ["Vue 3 Composition API", "Nuxt", "Pinia"]

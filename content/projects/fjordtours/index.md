@@ -3,131 +3,140 @@ title: "Fjordtours"
 date: "2023-06-01"
 slug: "projects/fjordtours"
 type: "UX"
+figma: "https://www.figma.com/design/yar743TJhMYKdAt4PUMVQM/Fjordtours-B2B?node-id=516-2466&t=RL4tUy6zmIBaibvI-1"
 icon: "ticket"
-description: "A portfolio project showcasing animation and design."
+description: "Created a new workflow for Fjord Tour's B2B booking system. Fjord Tours is the travel package provider behind products such as Norway's best selling roundtrip, 'Norway in a Nutshell'."
 ---
 
-# **Fjordtours B2B Portal Redesign: Rethinking Workflows**
+::Heading 
+#heading 
+Fjord Tours
+::
 
-## **Project Overview**
-**Title:** Rethinking Workflows  
-**Client:** Fjordtours  
-**Objective:** Redesign a B2B booking portal to improve efficiency and usability, supporting Fjordtours’ strategic focus on B2B sales.
+::FigmaLink
+#link
+[Open project in Figma](https://www.figma.com/design/yar743TJhMYKdAt4PUMVQM/Fjordtours-B2B?node-id=516-2466&t=RL4tUy6zmIBaibvI-1)
+::
 
----
+::SectionHeading
+#text
+Project overview
+::
 
-## **Needs and Constraints**
-### **Scoping the Project**
-Fjordtours scheduled the B2B portal redesign as a multi-stage release:
-1. **MVP Release:** Enable agents to view transport orders and process card payments, aiming to reduce the internal booking team’s workload.
-2. **Second Release:** Add functionality for agents to modify existing orders and include additional payment options.
-3. **Third Release:** Allow agents to book transport products directly.
+::SectionCopy
+#text
+Created a new workflow for Fjord Tour's B2B booking system. Fjord Tours is the travel package provider behind products such as Norway's best selling roundtrip, 'Norway in a Nutshell'.
+::
 
-With limited time before the MVP release, collaboration with the frontend team was essential to integrate UX enhancements while aligning with ongoing development.
+::SectionHeading
+#text
+Role
+::
 
-### **Future Scalability**
-Though the initial focus was on transport orders, the UX design needed to account for future product categories, ensuring that the interface could scale smoothly in features and functionality.
+::SectionCopy
+#text
+I worked as an integral part of the frontend team at Fjord Tours, participating in daily stand ups and weekly sprint planning meetings. Day to day I worked closely with the frontend developers, but I also worked independently with external graphic designers, to align my work with new design guidelines that were being developed at the time.
+::
 
----
+::SectionHeading
+#text
+Fjord Tours
+::
 
-## **Client Background**
-Fjordtours is a leading inbound tour operator in Norway, known for its signature “In a Nutshell” tours that combine transport and local experiences, such as cider tasting and kayaking. Fjordtours aims to strengthen its B2B sales channel, allowing agents to book directly, bypassing intermediaries and enhancing customer reach.
+::SectionCopy
+#text
+Fjordtours is an inbound tour operator based in Bergen, Norway. They aim to give travellers the quintessential local experience, conceptualised through their branded ‘In a Nutshell Tours’, offered both to travel agents and direct to consumers. In a Nutshell Tours combines transport, such as ferries and trains, with local activities en route, including apple cider tasting and kayaking in UNESCO listed landscape. Fjordtours’ flagship product, ‘Norway in a Nutshell’ which includes the spectacular Flåm railway journey, is Norways most popular roundtrip.
+::
 
-### **Catalysts for Change**
-- **Increased B2B Focus:** B2B sales offer higher margins and reach agents with limited local expertise, making Fjordtours an attractive service partner.
-- **Exclusive Ticketing:** As the sole advance seller of VY train tickets, Fjordtours needed a system to handle group bookings efficiently.
-- **Industry Challenges:** High turnover in the travel sector due to the pandemic led to more inexperienced agents needing user-friendly tools.
+::SectionHeading
+#text
+The client's problem
+::
 
----
+::SectionCopy
+#text
+As B2B sales have not been a prioritised channel for Fjordtours in past, the booking platform used by agents to place orders reflects this. The current interface was developed for use by Fjordtours’ internal booking team, and is characterised by creative work-araounds. The platform was designed from a backend perspective, with little to no user and stakeholder involvement, which has left it unintuitive to use for both agents and Fjordtours employees.
+::
 
-## **Problem Statement**
-Fjordtours’ B2B platform was originally designed for internal use, resulting in an interface that is not intuitive for external agents. A confusing and ineffective interface risks alienating users and undermining Fjordtours’ strategic goals.
+::SectionCopy
+#text
+As reaching non-specialist tour operators is a strategic aim, the poor and confusing interface poses a risk to the implementation of business goals. As Fjordtours’ head of B2B sales puts it “if these agents do not understand the interface, they will simply leave”. Even for agents who book through the interface regularly, it provokes negative emotions to the extent that they dread having to book Norway in a Nutshell, and have made point of sale agents advice travellers to book directly from the consumer facing website.
+::
 
-> **Problem:** “How can we create a conceptual model that aligns with diverse user needs, supporting agents’ workflows and reducing friction in task completion?”
+::SectionCopy
+#text
+Finally, as Fjordtours only recently started selling group transport for VY, there currently is no solution for agents to book ‘transport only’ products, and they instead rely on e-mail communications with the internal booking team. The booking team, already overburdened with compensating for the lack of usability of the B2B platform, is now at maximum capacity, leaving little room for the strategic allocation of resources.
+::
 
----
+::SectionHeading
+#text
+So how might we solve it?
+::
 
-## **Research and Discovery**
-### **Research Plan and Objectives**
-To design a solution that fits seamlessly into users' workflows, we explored:
-- **Ecosystem Understanding:** Identifying key roles, products, and business processes to contextualize the B2B portal.
-- **User and Business Insights:** Mapping Fjordtours’ strategic goals and business logic alongside agents’ mental models and workflow pain points.
+::SectionCopy
+#text
+- **How might we** make it fast and easy for expert users to complete tasks in the interface, without confusing novice users?
+- **How might we** create a tool that fits into and supports users’ over all workflow?
+- **How might we** make the learning curve fast without compromising on efficiency?
+::
 
-### **Research Methods**
-- **Secondary Research:** Literature review and competitive analysis to understand the market and existing solutions.
-- **Primary Research:**
-  - **Interviews** with stakeholders and industry experts to understand the ecosystem and user challenges.
-  - **Contextual Inquiry** with agents to observe real-world workflows, needs, and pain points.
+::SectionHeading
+#text
+A Command and Control Centre
+::
 
----
+::SectionCopy
+#text
+A command and control centre, inspired by rich search, predictive search and command palettes, will give expert users the speed, efficiency and flexibility they need. This solution is still easy to use for novice users, due to progressive reveal, combined with the use of concepts which are already familiar to them. From the search box, users can confirm order details, check the availability of products (and continue to booking), discover products by destination, and view and open new customer support tickets. 
+::
 
-## **Summary of Findings**
-Key insights shaped the solution:
-1. **Efficiency is Crucial:** Agents need tools that integrate smoothly with their larger workflow.
-2. **Mismatch in Mental Models:** The current interface does not align with users’ workflows, creating unnecessary friction.
-3. **Diverse User Needs:** Different agents have varied requirements based on their expertise and location within the value chain.
+::SectionImage
+#image
+![Fjord Tours command pallette](/images/projects/fjordtours1.png)
+::
 
----
+::SectionHeading
+#text
+UX Design patterns
+::
 
-## **Ideation and Solution**
-### **Command and Control Center**
-The redesigned portal leverages familiar search, predictive search, and command palette patterns to improve usability:
-- **Centralized Search Box:** Allows agents to confirm orders, check product availability, and manage support tickets from a single interface.
-- **Progressive Disclosure:** Offers complexity gradually, supporting both novice and expert users.
+::SectionSubheading
+#text
+Command palette with context cues
+::
 
-### **Conceptual and Mental Model Alignment**
-Creating a conceptual model that mirrors agents' mental models reduces cognitive load, making the interface more intuitive:
-- **Consistent Terminology:** The platform’s terminology matches agents’ vocabulary, minimizing confusion and enhancing usability.
-- **Clear Object Hierarchy:** Key objects (e.g., products, orders, destinations, support tickets) are consistently defined, with clear actions and attributes, like order reference numbers, improving predictability.
+::SectionImageCopy
+#image
+![Fjord Tours command pallette](/images/projects/fjordtours2.png)
+#text
+The search box is partly a command palette, as the user can execute short cut commands when the element is in focus. Another feature inspired by command palettes is that the suggested options (results) depend on specific formatting. As an example, if the user begins the input with a hash symbol, the system “knows” that the user is referring to a specific order, and displays the appropriate actions to be performed on that order.
+::
 
----
+::SectionSubheading
+#text
+Rich search results
+::
 
-## **Key Task Flows**
-The solution was built around primary tasks identified during research:
-1. Book a train journey for a large group.
-2. Book a Norway in a Nutshell roundtrip.
-3. View order by reference.
-4. Open and view customer support tickets.
-5. Check payment status.
+::SectionImageCopy
+#image
+![Fjord Tours command pallette](/images/projects/fjordtours3.png)
+#text
+Search results/suggested options are grouped into descriptive categories, which lets the user immediately scan and navigate to the appropriate option. The group patterns are consistent, which makes using the search box predictable, and in turn becoming automatic.
+::
 
----
+::SectionSubheading
+#text
+Predictive search
+::
 
-## **Design Patterns**
-### **Search and Command Palette**
-- **Command Palette:** Shortcuts support quick actions for expert users.
-- **Predictive Search:** Search suggestions appear as the user types, organized by object types to enhance scanability and efficiency.
-- **Contextual Quick Actions:** Contextual shortcuts reduce clicks and improve flow, catering to both novice and expert users.
+::SectionImageCopy
+#image
+![Fjord Tours command pallette](/images/projects/fjordtours4.png)
+#text
+The search box gives the user suggestions based on their input as they type. The suggestions are based on the designs conceptual model, making the functionality intuitive, but also making it easier to provide useful predictions. As an example, if a user searches for a particular destination, the suggestions will display all the objects that have the destination as an attribute, grouped by object type.
+::
 
-### **Design Principles**
-The interface incorporates cognitive psychology principles to enhance usability:
-- **Reduce Cognitive Load:** By keeping search terms and actions visible, users can make decisions without overloading their memory.
-- **Contextual Cues for Novices:** Novice users receive guidance through hover cues, while experts can use shortcuts for faster task completion.
-
----
-
-## **Wireflows**
-The visual hierarchy reflects the user’s mental model:
-1. **Order-Level Information:** Displays high-level details and actions for the entire order.
-2. **Order-Item Information:** Sub-orders are shown as individual components (inspired by itinerary layouts), making it easy to scan and understand.
-
----
-
-## **Usability Testing**
-To refine the design, usability testing focused on:
-- **Matching User Mental Models:** Validating that the conceptual model aligns with users' expectations.
-- **Workflow Efficiency:** Measuring task completion speed and identifying usability pain points.
-- **Test Tasks:** Booking a trip, managing orders, and checking payment status, to validate key flows and benchmark future iterations.
-
----
-
-## **Design Requirements**
-Using the Requirements Definition Process, we separated the *what* from the *how* to prevent stakeholders from designing solutions. This approach ensured that the final product focused on real user needs rather than replicating the current system’s limitations.
-
----
-
-## **Imagining a Better Story**
-### **Context Scenario**
-A narrative-based scenario helped align stakeholders and visualize user journeys, setting the stage for an intuitive and efficient user experience.
-
----
-
+::FigmaLink
+#link
+[Open project in Figma](https://www.figma.com/design/yar743TJhMYKdAt4PUMVQM/Fjordtours-B2B?node-id=516-2466&t=RL4tUy6zmIBaibvI-1)
+::
