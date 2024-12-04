@@ -18,7 +18,22 @@ Youwish Web Application
 
 ::Links
 #links
-View the project on [Github](https://duckduckgo.com) or the [website](https://duckduckgo.com)
+
+    :::WebLink
+    #link
+    [View web application](https://youwish-frontend.onrender.com)
+    :::
+
+    :::GithubLink
+    #link
+    [View on Github](https://github.com/juliadyrdal/youwish-frontend)
+    :::
+
+    :::GithubLink
+    #link
+    [View API on Github](https://github.com/juliadyrdal/product-data-api)
+    :::
+
 ::
 
 ::SectionHeading
@@ -56,14 +71,20 @@ I chose to use the external library metascraper over a web scraper like Cheerio 
 Roadmap
 ::
 
-::SectionCopy
+::SectionListHeading
+#heading
+UX enhancements
 #text
-- **UX enhancements**
 - Empty state with CTA when no items have been saved to wishlist.
 - Warning dialog box after clicking 'remove item'.
 - Make 'add item' module more intuitive by hiding the input field after clicking 'find item' button, and then showing a loading animation, before finally displaying the results.
 - Error state whewn product is not found or is sold out, both in the 'add item' module and in the wishlist.
-- **Features**
+::
+
+::SectionListHeading
+#heading
+Features
+#text
 - Ability to create multiple wishlists and decide which wishlist to add a new item to.
 - Save wishlists and items to a MongoDB database,
 - Implement authentication with Auth0.

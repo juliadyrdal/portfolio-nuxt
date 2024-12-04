@@ -18,7 +18,17 @@ SoundCanvas
 
 ::Links
 #links
-View the project on [Github](https://duckduckgo.com) or the [website](https://duckduckgo.com)
+
+    :::WebLink
+    #link
+    [View web application](https://soundcanvas-kw93.onrender.com)
+    :::
+
+    :::GithubLink
+    #link
+    [View on Github](https://github.com/juliadyrdal/soundcanvas)
+    :::
+
 ::
 
 ::SectionHeading

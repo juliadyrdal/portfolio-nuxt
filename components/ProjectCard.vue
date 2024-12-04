@@ -40,7 +40,7 @@ const heroIcon = icons[props.project.icon]
 
             <!--Links container-->
             <div>
-                <ul class="mt-4 lg:flex gap-10">
+                <ul class="mt-4 flex gap-10">
                     <li v-if="project.github" class="flex gap-4 items-center">
                         <IconGithub class="h-[2rem]" :fontControlled="false" />
                         <a :href="project.github" target="_blank" class="text-lg hover:underline underline-offset-4">View on Github</a>
