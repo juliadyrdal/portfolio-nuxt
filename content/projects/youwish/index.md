@@ -75,17 +75,17 @@ Roadmap
 #heading
 UX enhancements
 #text
-- Empty state with CTA when no items have been saved to wishlist.
-- Warning dialog box after clicking 'remove item'.
-- Make 'add item' module more intuitive by hiding the input field after clicking 'find item' button, and then showing a loading animation, before finally displaying the results.
-- Error state whewn product is not found or is sold out, both in the 'add item' module and in the wishlist.
+- [x] ~~Empty state with CTA when no items have been saved to wishlist.~~
+- [x] ~~Warning dialog box after clicking 'remove item'.~~
+- [ ] Make 'add item' module more intuitive by hiding the input field after clicking 'find item' button, and then showing a loading animation, before finally displaying the results.
+- [ ] Error state whewn product is not found or is sold out, both in the 'add item' module and in the wishlist.
 ::
 
 ::SectionListHeading
 #heading
 Features
 #text
-- Ability to create multiple wishlists and decide which wishlist to add a new item to.
-- Save wishlists and items to a MongoDB database,
-- Implement authentication with Auth0.
+- [ ] Ability to create multiple wishlists and decide which wishlist to add a new item to.
+- [ ] Save wishlists and items to a MongoDB database,
+- [ ] Implement authentication with Auth0.
 ::

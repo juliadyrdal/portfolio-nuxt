@@ -66,8 +66,9 @@ Letting users edit the sections posed some technical challenges, such as lining 
 Roadmap
 ::
 
-::SectionCopy
+::SectionListHeading
+#heading
+UX enhancements
 #text
-- **UX enhancements**
-- Add colour picker to edit mode.
+- [ ] Add colour picker to edit mode.
 ::
