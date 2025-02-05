@@ -31,9 +31,19 @@ Youwish Web Application
 
     :::GithubLink
     #link
-    [View API on Github](https://github.com/juliadyrdal/product-data-api)
+    [View API on Github](https://github.com/juliadyrdal/youwish-backend)
     :::
 
+    :::GithubLink
+    #link
+    [View product API on Github](https://github.com/juliadyrdal/product-data-api)
+    :::
+
+::
+
+::SectionCopy
+#text
+To test the web application without signing up, click the 'Demo user' button at the bottom of the page.
 ::
 
 ::SectionHeading
@@ -77,8 +87,8 @@ UX enhancements
 #text
 - [x] ~~Empty state with CTA when no items have been saved to wishlist.~~
 - [x] ~~Warning dialog box after clicking 'remove item'.~~
-- [ ] Make 'add item' module more intuitive by hiding the input field after clicking 'find item' button, and then showing a loading animation, before finally displaying the results.
-- [ ] Error state whewn product is not found or is sold out, both in the 'add item' module and in the wishlist.
+- [x] ~~Make 'add item' module more intuitive by hiding the input field after clicking 'find item' button, and then showing a loading animation, before finally displaying the results.~~
+- [ ] Error state when product is not found or is sold out, both in the 'add item' module and in the wishlist.
 ::
 
 ::SectionListHeading
@@ -86,6 +96,6 @@ UX enhancements
 Features
 #text
 - [ ] Ability to create multiple wishlists and decide which wishlist to add a new item to.
-- [ ] Save wishlists and items to a MongoDB database,
-- [ ] Implement authentication with Auth0.
+- [x] ~~Save items to a MongoDB database.~~
+- [x] ~~Implement authentication with Supabase.~~
 ::
