@@ -1,4 +1,4 @@
-<!--Catch all layout for content module-->
+<!--Catch-all layout for content module-->
 <template>
     <main>
         <div class="container mx-auto my-12 lg:px-40">

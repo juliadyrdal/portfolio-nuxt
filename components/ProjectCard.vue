@@ -66,7 +66,7 @@ const heroIcon = icons[props.project.icon]
             <!--Text content-->
             <p class="mt-4 mb-2 text-sm md:text-base">
                 {{ project.description }}
-                <NuxtLink :to="project.slug" class="pl-2 underline underline-offset-2">Read more...</NuxtLink>
+                <NuxtLink :to="project.slug" class="pl-2 font-semibold hover:underline underline-offset-4">Read more...</NuxtLink>
             </p>
             <!--End Text content-->
 

@@ -82,7 +82,7 @@ onMounted(() => {
             <!--End Projects heading and filters-->
 
             <!--Project cards-->
-            <div class="px-12 pt-4 lg:px-60">
+            <div class="px-12 pt-4 xl:px-60">
                 <ProjectCard v-for="project in displayedProjects" :key="project._path" :project="project" class="mb-24" />
             </div>
             <!--End Project cards-->
