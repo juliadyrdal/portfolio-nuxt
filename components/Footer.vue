@@ -19,7 +19,7 @@ import IconPaperPlane from '~/assets/paper-plane.svg'
 
             <!--Footer links list-->
             <div class="mt-10">
-                <ul class="lg:flex gap-16">
+                <ul class="sm:flex gap-16">
                     <li class="flex gap-4 items-center">
                         <IconGithub class="h-[6rem] pb-8" :fontControlled="false" />
                         <a href="http://www.github.com/juliadyrdal" target="_blank" class="-mt-8 text-xl font-bold hover:underline underline-offset-4">@juliadyrdal</a>
