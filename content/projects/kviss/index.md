@@ -1,5 +1,5 @@
 ---
-title: "Kviss"
+title: "Kviss (AI)"
 date: "2023-06-01"
 slug: "projects/kviss"
 type: "Web development"
@@ -7,8 +7,8 @@ github: "https://github.com/juliadyrdal/kviss-frontend"
 url: "https://kviss-frontend-rv5a.onrender.com"
 order: 1
 icon: "trophy"
-tech: ["Vue", "Nuxt", "Tailwindcss", "Node.js", "Express"]
-description: "'Kviss' is a web application where users can create quizes and play against their friends or test themselves solo. The app leverages AI to create the quiz for you. Simply enter a theme, level of difficulty, number of questions and invite your friends!"
+tech: ["Vue", "Nuxt", "Tailwindcss", "Node.js", "Express", "Socket.io"]
+description: "'Kviss' is a web application where users can create quizes and play against their friends or test themselves solo. The app leverages AI (GPT-model 4o) to create the quiz for you. Simply enter a theme, level of difficulty, number of questions and invite your friends!"
 ---
 
 ::Heading 
@@ -43,7 +43,7 @@ Project overview
 
 ::SectionCopy
 #text
-'Kviss' is a web application where users can create quizes and play against their friends or test themselves solo. The app leverages AI to create the quiz for you. Simply enter a theme, level of difficulty, number of questions and invite your friends!
+'Kviss' is a web application where users can create quizes and play against their friends or test themselves solo. The app leverages AI (GPT-model 4o) to create the quiz for you. Simply enter a theme, level of difficulty, number of questions and invite your friends!
 ::
 
 ::SectionCopy
