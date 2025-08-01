@@ -1,6 +1,8 @@
 <script setup>
 import IconDeveloper from '~/assets/developer2.svg'
 import IconCode from '~/assets/code.svg' 
+import IconEllipse from '~/assets/ellipse.svg' 
+import IconArrow from '~/assets/arrow.svg' 
 
 
 onMounted(() => {
@@ -16,7 +18,7 @@ onMounted(() => {
 <template>
     <div>
         <section class="bg-[#F9F9F9]">
-        <div id="heroContainer" class="grid grid-cols-6 items-start relative">
+        <div id="heroContainer" class="absolute top-[10rem] lg:top-[35%] left-[50%] -translate-x-[30%] grid grid-cols-6 items-start">
             <div class="col-span-3 flex flex-col items-center">
                 <svg id="uxSvg" class="pb-2 z-20 w-[20rem] sm:w-[30rem] lg:w-[42rem]" width="720" height="120" viewBox="0 0 720 120" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path id="ux1" d="M666.357 50.896V31.184H687.349V41.68C690.165 34.896 695.669 29.904 703.989 29.904C709.749 29.904 714.485 31.568 717.557 35.28L717.685 35.664C712.949 39.12 707.957 47.952 707.573 53.84L707.189 53.968C705.653 52.816 702.965 52.176 700.149 52.176C690.549 52.176 687.861 60.496 687.861 70.096V94.544H666.357V50.896Z" fill="white" stroke="black" stroke-width="3"/>
@@ -42,18 +44,29 @@ onMounted(() => {
                 <circle id="uxIcon6" cx="156.5" cy="664.5" r="26.5" stroke="black" stroke-width="2"/>
             </svg>
         </div>
+        <div class="block lg:hidden flex justify-center mt-[20rem]">
+            <div>
+                <IconEllipse class="w-[6rem] sm:w-[10rem] text-white" :fontControlled="false" />
+                <div class="absolute -mt-10 sm:-mt-20 left-1/2 -translate-x-1/2 -translate-y-1/2">
+                    <div class="flex flex-col gap-3 justify-center">
+                        <span class="hidden sm:block text-[#333] font-semibold">Projects</span>
+                        <IconArrow class="h-[2rem] text-[#333]" :fontControlled="false" />
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
     </div>
 </template>
 
 <style>
-#heroContainer {
+/*#heroContainer {
     position: absolute;
     top: 35%;
     left: 50%;
     transform: translate(-30%, 0);
     z-index: 100;
-}
+}*/
 
 #ux1 {
     stroke-dasharray: 231.76;

@@ -1,6 +1,6 @@
 <script setup>
 // Import Heroicons
-import { ComputerDesktopIcon, MusicalNoteIcon, BookmarkIcon, TicketIcon, DevicePhoneMobileIcon } from '@heroicons/vue/24/outline'
+import { ComputerDesktopIcon, MusicalNoteIcon, BookmarkIcon, TicketIcon, DevicePhoneMobileIcon, TrophyIcon } from '@heroicons/vue/24/outline'
 import IconGithub from '~/assets/github-mi.svg'
 import IconFigma from '~/assets/figma.svg'
 
@@ -13,7 +13,8 @@ const icons = {
     'music-note': MusicalNoteIcon,
     'bookmark': BookmarkIcon,
     'ticket': TicketIcon,
-    'phone': DevicePhoneMobileIcon
+    'phone': DevicePhoneMobileIcon,
+    'trophy': TrophyIcon
 }
 
 const heroIcon = icons[props.project.icon]
