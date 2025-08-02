@@ -21,22 +21,22 @@ Youwish Web Application
 
     :::WebLink
     #link
-    [View web application](https://youwish-frontend.onrender.com)
+    [Live site](https://youwish-frontend.onrender.com)
     :::
 
     :::GithubLink
     #link
-    [View on Github](https://github.com/juliadyrdal/youwish-frontend)
+    [Frontend](https://github.com/juliadyrdal/youwish-frontend)
     :::
 
     :::GithubLink
     #link
-    [View API on Github](https://github.com/juliadyrdal/youwish-backend)
+    [Backend](https://github.com/juliadyrdal/youwish-backend)
     :::
 
     :::GithubLink
     #link
-    [View product API on Github](https://github.com/juliadyrdal/product-data-api)
+    [Product API](https://github.com/juliadyrdal/product-data-api)
     :::
 
 ::

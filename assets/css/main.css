@@ -19,3 +19,9 @@
     font-style: normal;
     font-display: swap;
 }
+
+pre code {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}

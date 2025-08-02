@@ -1,8 +1,7 @@
 <script setup>
 // Import icon assets
 import IconUnderlineLarge from '~/assets/underline-large.svg'
-import IconNumber4 from '~/assets/number4.svg'
-import IconNumber2 from '~/assets/number2.svg'
+import IconNumbercircle from '~/assets/numbercircle.svg'
 import IconUnderlineXsmall from '~/assets/underline-xsmall.svg'
 
 // Import store
@@ -13,7 +12,7 @@ import { storeToRefs } from 'pinia'
 const projectStore = useProjectStore()
 
 // Make reactive
-const { selectedCategory, displayedProjects } = storeToRefs(projectStore)
+const { projects, selectedCategory, displayedProjects } = storeToRefs(projectStore)
 
 // Destructure actions
 const { fetchProjects, setCategory } = projectStore
@@ -58,7 +57,12 @@ onMounted(() => {
                                     <span
                                         :class="{ 'font-bold': selectedCategory === 'webDev' }"
                                     >Web development</span> 
-                                    <IconNumber2 class="hidden md:block text-5xl -mt-2" />
+                                    <div class="relative">
+                                        <IconNumbercircle class="hidden md:block text-5xl -mt-2" />
+                                        <span class="absolute inset-0 flex items-center justify-center text-lg text-black -mt-4">
+                                            {{ projects.webDev.length }}
+                                        </span>
+                                    </div>
                                 </button>
                                 <IconUnderlineXsmall v-if="selectedCategory === 'webDev'" class="hidden md:block md:w-[5rem] -ml-5 -mt-2" :fontControlled="false" />
                             </div>
@@ -69,7 +73,12 @@ onMounted(() => {
                                     <span
                                         :class="{ 'font-bold': selectedCategory === 'ux' }"
                                     >UX design</span> 
-                                    <IconNumber2 class="hidden md:block text-5xl -mt-2" />
+                                    <div class="relative">
+                                        <IconNumbercircle class="hidden md:block text-5xl -mt-2" />
+                                        <span class="absolute inset-0 flex items-center justify-center text-lg font-light text-black -mt-4">
+                                            {{ projects.ux.length }}
+                                        </span>
+                                    </div>
                                 </button>
                                 <IconUnderlineXsmall v-if="selectedCategory === 'ux'" class="hidden md:block md:w-[5rem] -ml-5 -mt-2" :fontControlled="false" />
                             </div>

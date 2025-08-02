@@ -56,6 +56,17 @@ The 'Kviss' quiz app was born when I was living abroad and wanted a way to play 
 From these requirements I created wireframes in Figma. I tried to make the design playful without cluttering the UI.
 ::
 
+::SectionImageRow
+#image1
+![Figma wireframe: Kviss landing page](/images/projects/kviss-1.png)
+#image2
+![Figma wireframe: Kviss landing page](/images/projects/kviss-2.png)
+#image3
+![Figma wireframe: Kviss landing page](/images/projects/kviss-3.png)
+#image4
+![Figma wireframe: Kviss landing page](/images/projects/kviss-4.png)
+::
+
 ::SectionHeading
 #text
 Technical description
@@ -75,6 +86,20 @@ Technical challenges
 #text
 Getting a consitently formatted response from Open AI's GPT-model 4o was a bit of a challenge. I solved this by giving it a detailed prompt which included an example format, and added logic to extract only the JSON part of the response, as well as validating the structure. Working with Socket.io was challenging as it was new to me and there is a bit om game logic, but I learnt a lot.
 ::
+
+```javascript
+const prompt = `Create a quiz with ${numQuestions} multiple-choice questions on the theme of "${theme}" The quiz should have a difficulty of ${difficulty}, on a scale of 1 to 10. The response should be formatted as a JSON string containing an array of objects. Each object should have the following structure:
+{
+  "question": "Question text?",
+  "options": {
+    "A": "Option A",
+    "B": "Option B",
+    "C": "Option C",
+    "D": "Option D"
+  },
+  "correctAnswer": "A"
+}`;
+```
 
 ::SectionHeading
 #text
