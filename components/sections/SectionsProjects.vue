@@ -27,18 +27,18 @@ onMounted(() => {
 <template>
     <!--Projects section-->
     <section>
-        <div id="projects" class="">
+        <div id="projects" class="container mx-auto px-4 lg:px-0 max-w-5xl">
             <!--Projects heading and filters-->
             <div class="flex flex-col items-center">
 
                 <!--Projects section heading-->
                 <h2 class="font-rundDisplay font-bold text-5xl sm:text-6xl md:text-6xl lg:text-8xl xl:text-[9rem] px-4 text-center">Projects</h2>
-                <IconUnderlineLarge class="w-[16rem] sm:w-[20rem] md:w-[24rem] lg:w-[28rem] xl:w-[32rem]" :fontControlled="false" />
+                <IconUnderlineLarge class="w-[16rem] sm:w-[20rem] md:w-[24rem] lg:w-[28rem] xl:w-[32rem] mt-1.5 lg:mt-4" :fontControlled="false" />
                 <!--End Projects section heading-->
 
                 <!--Filter projects-->
                 <nav class="my-12 md:my-20">
-                    <ul class="flex gap-10 md:gap-32">
+                    <ul class="flex gap-6 sm:gap-10 md:gap-32">
                         <li class="text-sm md:text-xl font-rundDisplay">
                             <div class="flex flex-col items-center">
                                 <button @click="setCategory('all')">
@@ -56,9 +56,9 @@ onMounted(() => {
                                     <span
                                         :class="{ 'font-bold': selectedCategory === 'webDev' }"
                                     >Web development</span> 
-                                    <div class="relative">
-                                        <IconNumbercircle class="hidden md:block text-5xl -mt-2" />
-                                        <span class="absolute inset-0 flex items-center justify-center text-lg text-black -mt-4">
+                                    <div class="relative hidden sm:block">
+                                        <IconNumbercircle class="block text-5xl -mt-2" />
+                                        <span class="absolute inset-0 flex items-center justify-center text-sm lg:text-lg text-black -mt-4">
                                             {{ projects.webDev.length }}
                                         </span>
                                     </div>
@@ -72,9 +72,9 @@ onMounted(() => {
                                     <span
                                         :class="{ 'font-bold': selectedCategory === 'ux' }"
                                     >UX design</span> 
-                                    <div class="relative">
-                                        <IconNumbercircle class="hidden md:block text-5xl -mt-2" />
-                                        <span class="absolute inset-0 flex items-center justify-center text-lg font-light text-black -mt-4">
+                                    <div class="relative hidden sm:block">
+                                        <IconNumbercircle class="block text-5xl -mt-2" />
+                                        <span class="absolute inset-0 flex items-center justify-center text-sm lg:text-lg font-light text-black -mt-4">
                                             {{ projects.ux.length }}
                                         </span>
                                     </div>
@@ -90,7 +90,7 @@ onMounted(() => {
             <!--End Projects heading and filters-->
 
             <!--Project cards-->
-            <div class="px-12 pt-4 xl:px-60">
+            <div class="pt-4">
                 <ProjectCard v-for="project in displayedProjects" :key="project._path" :project="project" class="mb-24" />
             </div>
             <!--End Project cards-->

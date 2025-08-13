@@ -43,16 +43,16 @@ const heroIcon = icons[props.project.icon]
             <div>
                 <ul class="mt-4 flex gap-10">
                     <li v-if="project.github" class="flex gap-4 items-center">
-                        <IconGithub class="h-[2rem]" :fontControlled="false" />
-                        <a :href="project.github" target="_blank" class="text-lg hover:underline underline-offset-4">View on Github</a>
+                        <IconGithub class="h-[1.5rem] lg:h-[2rem]" :fontControlled="false" />
+                        <a :href="project.github" target="_blank" class="lg:text-lg hover:underline underline-offset-4">View on Github</a>
                     </li>
                     <li v-if="project.url" class="flex gap-4 items-center">
-                        <ComputerDesktopIcon class="size-6" />
-                        <a :href="project.url" target="_blank" class="text-lg hover:underline underline-offset-4">View website</a>
+                        <ComputerDesktopIcon class="size-5 lg:size-6" />
+                        <a :href="project.url" target="_blank" class="lg:text-lg hover:underline underline-offset-4">View website</a>
                     </li>
                     <li v-if="project.figma" class="flex gap-4 items-center">
-                        <IconFigma class="h-[2rem] text-white" :fontControlled="false" />
-                        <a :href="project.figma" target="_blank" class="text-lg hover:underline underline-offset-4">View project in Figma</a>
+                        <IconFigma class="h-[1.5rem] lg:h-[2rem] text-white" :fontControlled="false" />
+                        <a :href="project.figma" target="_blank" class="lg:text-lg hover:underline underline-offset-4">View project in Figma</a>
                     </li>
                 </ul>
             </div>

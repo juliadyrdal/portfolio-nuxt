@@ -49,7 +49,7 @@ onMounted(() => {
         </div>
         <div class="block lg:hidden flex justify-center mt-[20rem]">
             <div>
-                <IconEllipse class="w-[6rem] sm:w-[10rem] text-white" :fontControlled="false" />
+                <IconEllipse class="w-[6rem] sm:w-[10rem] mt-6 text-white" :fontControlled="false" />
                 <div class="absolute -mt-10 sm:-mt-20 left-1/2 -translate-x-1/2 -translate-y-1/2">
                     <div class="flex flex-col gap-3 justify-center">
                         <span class="hidden sm:block text-[#333] font-semibold">Projects</span>
