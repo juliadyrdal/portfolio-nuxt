@@ -7,8 +7,8 @@
 
 <template>
     <!--Header-->
-    <header>
-        <div class="container mx-4 lg:mx-auto mt-8">
+    <header class="w-full overflow-hidden">
+        <div class="container mx-auto px-4 lg:px-0 mt-8 max-w-full">
             <div class="flex justify-between items-center">
                 <NuxtLink to="/">
                     <span class="font-rundDisplay text-[1.6rem] text-[#333]">Julia Dyrdal</span> 

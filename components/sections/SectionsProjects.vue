@@ -27,14 +27,13 @@ onMounted(() => {
 <template>
     <!--Projects section-->
     <section>
-        <div id="projects" class="mt-[110vh]">
-
+        <div id="projects" class="">
             <!--Projects heading and filters-->
             <div class="flex flex-col items-center">
 
                 <!--Projects section heading-->
-                <h2 class="font-rundDisplay font-bold text-[6rem] md:text-[9rem]">Projects</h2>
-                <IconUnderlineLarge class="w-[24rem] md:w-[32rem]" :fontControlled="false" />
+                <h2 class="font-rundDisplay font-bold text-5xl sm:text-6xl md:text-6xl lg:text-8xl xl:text-[9rem] px-4 text-center">Projects</h2>
+                <IconUnderlineLarge class="w-[16rem] sm:w-[20rem] md:w-[24rem] lg:w-[28rem] xl:w-[32rem]" :fontControlled="false" />
                 <!--End Projects section heading-->
 
                 <!--Filter projects-->
