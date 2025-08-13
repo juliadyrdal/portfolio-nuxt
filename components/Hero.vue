@@ -17,7 +17,7 @@ onMounted(() => {
 
 <template>
     <div>
-        <section class="bg-[#F9F9F9] h-screen">
+        <section class="bg-[#F9F9F9] h-svh lg:pb-6">
             <div id="heroContainer" class="absolute top-[12rem] lg:top-[35%] left-1/2 -translate-x-1/2 w-full px-4 lg:px-0">
             <div class="flex flex-col items-center lg:grid lg:grid-cols-6 lg:items-start lg:justify-center">
                 <div class="lg:col-span-3 lg:col-start-2 flex flex-col items-center">
