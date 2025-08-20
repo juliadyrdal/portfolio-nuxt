@@ -63,14 +63,6 @@ onMounted(() => {
 </template>
 
 <style>
-/*#heroContainer {
-    position: absolute;
-    top: 35%;
-    left: 50%;
-    transform: translate(-30%, 0);
-    z-index: 100;
-}*/
-
 #ux1 {
     stroke-dasharray: 231.76;
     stroke-dashoffset: 231.76;
