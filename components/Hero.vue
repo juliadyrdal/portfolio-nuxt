@@ -1,8 +1,8 @@
 <script setup>
 import IconDeveloper from '~/assets/developer2.svg'
-import IconCode from '~/assets/code.svg' 
-import IconEllipse from '~/assets/ellipse.svg' 
-import IconArrow from '~/assets/arrow.svg' 
+import IconHeart from '~/assets/heart.svg'
+import IconScribbleBox from '~/assets/scribble-box.svg'
+import IconScratchedArrow from '~/assets/scratched-arrow.svg'
 
 
 onMounted(() => {
@@ -22,7 +22,7 @@ onMounted(() => {
             <div class="flex flex-col items-center lg:grid lg:grid-cols-6 lg:items-start lg:justify-center">
                 <div class="lg:col-span-3 lg:col-start-2 flex flex-col items-center">
 
-            <svg id="uxSvg" class="pb-2 z-20 w-[20rem] sm:w-[30rem] lg:w-[42rem]" width="720" height="120" viewBox="0 0 720 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg id="uxSvg" class="pb-2 z-20 w-[25rem] sm:w-[30rem] lg:w-[42rem]" width="720" height="120" viewBox="0 0 720 120" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path id="ux1" d="M666.357 50.896V31.184H687.349V41.68C690.165 34.896 695.669 29.904 703.989 29.904C709.749 29.904 714.485 31.568 717.557 35.28L717.685 35.664C712.949 39.12 707.957 47.952 707.573 53.84L707.189 53.968C705.653 52.816 702.965 52.176 700.149 52.176C690.549 52.176 687.861 60.496 687.861 70.096V94.544H666.357V50.896Z" fill="white" stroke="black" stroke-width="3"/>
                         <path id="ux2" d="M628.467 96.592C608.115 96.592 594.291 81.488 594.291 62.8C594.291 44.368 608.371 29.136 627.571 29.136C650.355 29.136 663.411 47.568 659.955 69.456H615.283C617.331 75.6 622.451 78.544 628.851 78.544C636.147 78.544 640.627 74.064 641.907 70.096L642.291 69.968C645.491 74.32 653.811 78.544 659.315 78.544L659.443 78.928C653.939 90.704 642.163 96.592 628.467 96.592ZM615.539 54.736H639.603C637.683 49.744 633.587 46.672 627.187 46.672C621.683 46.672 617.587 49.616 615.539 54.736Z" fill="white" stroke="black" stroke-width="3"/>
                         <path id="ux3" d="M523.982 45.776V31.184H544.974V40.784C548.942 33.232 557.134 29.648 564.558 29.648C578.51 29.648 588.494 39.376 588.494 52.816V94.544H566.99V60.624C566.99 53.712 562.382 49.488 556.238 49.488C550.094 49.488 545.486 53.328 545.486 60.752V94.544H523.982V45.776Z" fill="white" stroke="black" stroke-width="3"/>
@@ -34,8 +34,13 @@ onMounted(() => {
                         <path id="ux9" d="M84.4839 94.544L114.18 49.104L86.2759 4.944H114.18L131.332 32.848H131.972L149.38 4.944H176.9L148.484 48.464L177.924 94.544H149.892L131.332 64.848H130.692L112.132 94.544H84.4839Z" fill="white" stroke="black" stroke-width="3"/>
                         <path id="ux10" d="M41.168 96.592C17.872 96.592 2 81.872 2 58.96V4.944H25.04V57.424C25.04 66.256 30.16 74.576 41.168 74.576C52.048 74.576 57.168 66.256 57.168 57.424V4.944H80.208V58.96C80.208 81.872 64.464 96.592 41.168 96.592Z" fill="white" stroke="black" stroke-width="3"/>
                     </svg>
-                    <IconDeveloper id="developer" class="-mt-6 lg:mt-0 w-[18rem] sm:w-[24rem] lg:w-[32rem] z-20" :fontControlled="false" />
-                    <IconCode id="code" class="hidden lg:block w-[42rem] mt-12 z-20" :fontControlled="false" />
+                    <IconDeveloper id="developer" class="-mt-6 lg:mt-0 w-[21rem] sm:w-[24rem] lg:w-[32rem] z-20" :fontControlled="false" />
+                    <!--<IconCode id="code" class="hidden lg:block w-[42rem] mt-12 z-20" :fontControlled="false" />-->
+                    <div id="code" class="mt-8 lg:-ml-20 flex flex-col gap-1 md:gap-1.5 font-rundDisplay text-base md:text-xl text-[#333]">
+                        <p>I’m a self-taught web developer based in <span>Bristol</span><IconHeart class="w-8 ml-2 inline text-white" :fontControlled="false" /></p>
+                        <p><span class="pr-[30px]">Check out my</span> projects <IconScribbleBox class="w-24 -ml-[75px] md:-ml-[85px] inline" :fontControlled="false" /> <span class="pl-[20px]">or scroll down</span></p>
+                        <p>to learn more about me.</p>
+                    </div>
                 </div>
                 <svg id="uxIconSvg" class="hidden lg:block w-[16rem] text-[#fff] relative -top-[14rem] -left-[10rem] lg:-left-6" width="311" height="736" viewBox="0 0 311 736" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <rect id="uxIcon1" x="1" y="1" width="309" height="733.617" rx="49" fill="white"/>
@@ -46,16 +51,8 @@ onMounted(() => {
                     <circle id="uxIcon6" cx="156.5" cy="664.5" r="26.5" stroke="black" stroke-width="2"/>
                 </svg>
             </div>
-        </div>
-        <div class="block lg:hidden flex justify-center mt-[20rem]">
-            <div>
-                <IconEllipse class="w-[6rem] sm:w-[10rem] mt-6 text-white" :fontControlled="false" />
-                <div class="absolute -mt-10 sm:-mt-20 left-1/2 -translate-x-1/2 -translate-y-1/2">
-                    <div class="flex flex-col gap-3 justify-center">
-                        <span class="hidden sm:block text-[#333] font-semibold">Projects</span>
-                        <IconArrow class="h-[2rem] text-[#333]" :fontControlled="false" />
-                    </div>
-                </div>
+            <div class="block lg:hidden flex justify-center mt-20">
+                <IconScratchedArrow class="w-20" :fontControlled="false" />
             </div>
         </div>
     </section>
