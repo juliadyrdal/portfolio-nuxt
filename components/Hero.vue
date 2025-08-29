@@ -38,7 +38,7 @@ onMounted(() => {
                     <!--<IconCode id="code" class="hidden lg:block w-[42rem] mt-12 z-20" :fontControlled="false" />-->
                     <div id="code" class="mt-8 lg:-ml-20 flex flex-col gap-1 md:gap-1.5 font-rundDisplay text-base md:text-xl text-[#333]">
                         <p>I’m a self-taught web developer based in <span>Bristol</span><IconHeart class="w-8 ml-2 inline text-white" :fontControlled="false" /></p>
-                        <p><span class="pr-[30px]">Check out my</span> projects <IconScribbleBox class="w-24 -ml-[75px] md:-ml-[85px] inline" :fontControlled="false" /> <span class="pl-[20px]">or scroll down</span></p>
+                        <p><span class="pr-[30px]">Check out my</span> <NuxtLink to="/projects">projects <IconScribbleBox class="w-24 -ml-[75px] md:-ml-[85px] inline" :fontControlled="false" /></NuxtLink> <span class="pl-[20px]">or scroll down</span></p>
                         <p>to learn more about me.</p>
                     </div>
                 </div>
