@@ -1,38 +1,48 @@
 <script setup>
 // Import icon assets
-import IconSmile from '~/assets/smile.svg'
 import IconGithub from '~/assets/github-mi.svg'
 import IconPaperPlane from '~/assets/paper-plane.svg'
+import IconLinkedin from '~/assets/linkedin.svg'
 </script>
 
 <template>
     <!--Footer section-->
-    <section class="flex flex-col items-center bg-white">
-        <div class="my-28">
-
-            <!--Footer heading-->
-            <div class="flex lg:gap-10">
-                <h2 class="font-rundDisplay font-bold text-6xl lg:text-8xl">Get in touch</h2>
-                <IconSmile class="hidden lg:block h-[6rem] pb-6" :fontControlled="false" />
+    <SectionsDivider title="Get in touch">
+        <template #content>
+            <div class="flex flex-col items-center lg:block">
+                 <div class="mt-20">
+                <p class="font-rundDisplay text-center lg:text-start">Always happy to hear from friendly humans.</p>
             </div>
-            <!--End Footer heading-->
 
-            <!--Footer links list-->
-            <div class="mt-10">
-                <ul class="sm:flex gap-16">
-                    <li class="flex gap-4 items-center">
-                        <IconGithub class="h-[6rem] pb-8" :fontControlled="false" />
-                        <a href="http://www.github.com/juliadyrdal" target="_blank" class="-mt-8 text-xl font-bold hover:underline underline-offset-4">@juliadyrdal</a>
-                    </li>
-                    <li class="flex gap-4 items-center">
-                        <IconPaperPlane class="h-[6rem] pb-8" :fontControlled="false" /> 
-                        <a href="mailto:juliadyrdal@pm.me" class="-mt-8 text-xl font-bold hover:underline underline-offset-4">juliadyrdal@pm.me</a>
-                    </li>
-                </ul>
+            <div class="mt-16 lg:mt-24 mb-12">
+            
+
+                <!--Footer links list-->
+                <div class="lg:mt-10">
+                    <ul class="flex flex-col gap-5 md:gap-4 lg:flex-row lg:items-center justify-between font-rundDisplay">
+                        <li>
+                            <a href="http://www.github.com/juliadyrdal" target="_blank" rel="noopener noreferrer" aria-label="GitHub: @juliadyrdal" class="flex items-center gap-3 text-lg lg:text-xl hover:underline underline-offset-4 focus:outline-none focus:ring-2 focus:ring-offset-2">
+                                <IconGithub class="w-[2rem] lg:w-[4rem]" :fontControlled="false" aria-hidden="true" />
+                                @juliadyrdal
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:juliadyrdal@pm.me" aria-label="Email: juliadyrdal@pm.me" class="flex items-center gap-3 text-lg lg:text-xl hover:underline underline-offset-4 focus:outline-none focus:ring-2 focus:ring-offset-2">
+                                <IconPaperPlane class="w-[2rem] lg:w-[4rem]" :fontControlled="false" aria-hidden="true" /> 
+                                juliadyrdal@pm.me
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https:/www.linkedin.com/in/juliadyrdal" target="_blank" rel="noopener noreferrer" aria-label="Linkedin: Julia Dyrdal" class="flex items-center gap-3 text-lg lg:text-xl hover:underline underline-offset-4 focus:outline-none focus:ring-2 focus:ring-offset-2">
+                                <IconLinkedin class="w-[2rem] lg:w-[3.5rem] text-white" :fontControlled="false" aria-hidden="true" /> 
+                                Julia Dyrdal
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <!--End Footer links list-->
-
-        </div>
-    </section>
+            </div>
+        </template>
+    </SectionsDivider>
     <!--End Footer section-->
 </template>

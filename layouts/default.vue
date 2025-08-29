@@ -11,7 +11,7 @@
         <div class="container mx-auto px-4 mt-4 max-w-full">
             <div class="flex justify-between items-center">
                 <NuxtLink to="/">
-                    <span class="font-rundDisplay text-[1.2rem]  lg:text-[1.6rem] text-[#333]">Julia Dyrdal</span> 
+                    <span class="font-rundDisplay text-[1.2rem] lg:text-[1.6rem] text-[#333]">Julia Dyrdal</span> 
                     <IconUnderlineSmall class="w-22 lg:w-32 text-[#333]" :fontControlled="false" />
                 </NuxtLink>
                 <a href="https://github.com/juliadyrdal" target="_blank">
